@@ -21,7 +21,7 @@ mongoose.connect(process.env.MONGO_URI, {
 }).then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 
-// Routes
+// Routess
 app.use('/api/personal-info', require('./routes/personalInfo'));
 app.use('/api/education', require('./routes/education'));
 app.use('/api/certificates', require('./routes/certificates'));
